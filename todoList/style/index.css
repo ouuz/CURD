@@ -1,0 +1,114 @@
+/* 公用*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*menu*/
+
+.container {
+    width: 65vh;
+    margin: 100px auto;
+    height: 77vh;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px 2px #8888;
+}
+
+.menu {
+    width: 100%;
+    height: 10%;
+    margin: 10px 0;
+}
+
+.menu-todo,
+.menu-calendar {
+    background-color: #3299CC;
+    color: white;
+    font-size: 25px;
+    border-radius: 50px;
+    height: 31px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+
+/*代做项表单*/
+
+#labelList {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#new-todo {
+    color: #007FFF;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    margin-left: 25px;
+}
+
+.btn_save,
+.btn_del {
+    background-color: #007FFF;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_del {
+    margin-left: 10px;
+}
+
+.btn_save {
+    margin-left: 5px;
+}
+
+
+/*弹出的增加表格*/
+
+#addlist {
+    width: 367px;
+    margin: 9px auto;
+    height: 500px;
+    border: 1px solid #ddd;
+    display: none;
+    box-shadow: 2px 2px 2px 2px #8888;
+    position: absolute;
+    top: 24%;
+    left: 36%;
+    background-color: white;
+}
+
+.addlist-menu {
+    margin: 2% 2% 0 2%;
+    height: 7%;
+}
+
+.addlist-table {
+    margin: 2% 2% 0 2%;
+}
+
+.addlist-table input {
+    border: 1px solid #ddd;
+    height: 40px;
+    width: 98%;
+}
+
+#addmenu-cancel,
+#addmenu-save {
+    background-color: white;
+    color: #ddd;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#addmenu-cancel {
+    color: black;
+}

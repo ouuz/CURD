@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人记账本</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./AmazeUI-2.7.2/assets/css/amazeui.css">
+    <link rel="stylesheet" href="./css/font_1106087_gqgq3hkolf4/iconfont.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="homePage">
+            <div class="navigation flex">
+                <div class="nav-left">
+                    <span class="iconfont youzi">&#xe606;</span>
+                    <span id="name">柚子记账</span>
+                </div>
+                <div class="nav-right">
+                    <ul class="am-nav am-nav-pills">
+                        <li class="am-active"><a href="">首页</a></li>
+                        <li><a href="">帮助</a></li>
+                        <li><a href="">登陆</a></li>
+                        <li><a href="">注册</a></li>
+                        <li data-am-smooth-scroll="{position: 8000}"><a href="">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logoBox">
+                <div class="am-slider am-slider-default" data-am-flexslider="{playAfterPaused: 8000}">
+                    <ul class="am-slides">
+                        <li> <img src="./images/banner_01.jpg" alt=""></li>
+                        <li><img src="./images/banner_02.jpg" alt=""></li>
+                        <li><img src="./images/banner_03.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navFuction flex">
+                <button data-am-smooth-scroll="{position: 183}" class="am-btn am-btn-secondary">
+           <span class="iconfont ">&#xe639;</span>
+           <p class="fuctionTitle">记账</p>
+           <p class="fuctionView">最简便的记账方式</p>
+          </button>
+                <button data-am-smooth-scroll="{position:1820}" class="am-btn am-btn-secondary">
+            <span class="iconfont ">&#xe604;</span>
+            <p class="fuctionTitle">图表</p>
+            <p class="fuctionView">百分比展现消费</p>
+          </button>
+                <button data-am-smooth-scroll="{position: 950}" class="am-btn am-btn-secondary">
+            <span class="iconfont ">&#xe635;</span>
+            <p class="fuctionTitle">明细</p>
+            <p class="fuctionView">具体详细的消费清单</p>
+          </button>
+                <button data-am-smooth-scroll="{position: 189}" class="am-btn am-btn-secondary">
+            <span class="iconfont ">&#xe606;</span>
+            <p class="fuctionTitle">我的</p>
+            <p class="fuctionView">个人信息界面</p>
+          </button>
+            </div>
+        </div>
+        <div class="specificFunction">
+            <div class="account">
+                <div class="accountBook">
+                    <ol class="am-breadcrumb">
+                        <li class="am-active"><a href="#">生活账本</a></li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="accountList flex">
+                    <div class="detail">
+                        <div class="addList  flex">
+                            <div class="sort">
+                                <select data-am-selected>
+                              <option value="a" selected>餐饮费</option>
+                              <option value="b" >服饰美容</option>
+                              <option value="c"> 生活日用</option>
+                              <option value="d">住房缴费</option>
+                              <option value="e">交通出行</option>
+                              <option value="f">通讯物流</option>
+                              <option value="g">文教娱乐</option>
+                              <option value="h">健康</option>
+                              <option value="i">其他消费</option>
+                          </select>
+                            </div>
+                            <div class="money">
+                                <select data-am-selected>
+                              <option value="a" selected>现金</option>
+                              <option value="b">银行卡</option>
+                              <option value="c">支付宝</option>
+                              <option value="d">信用卡</option>
+                              <option value="e">余额宝</option>
+                          </select>
+                            </div>
+                            <div class="figure">
+                                <div class="text">
+                                    <p><input type="number" class="am-form-field am-radius" placeholder="金额" /></p>
+                                </div>
+                            </div>
+                            <div class="time">
+                                <div class="am-input-group am-datepicker-date" data-am-datepicker="{format: 'yyyy-mm-dd'}">
+                                    <input type="text" class="am-form-field" placeholder="日历组件" readonly>
+                                    <span class="am-input-group-btn am-datepicker-add-on">
+                                      <button class="am-btn am-btn-default" type="button"><span class="am-icon-calendar"></span> </button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="note flex">
+                                <p><input type="text" class="am-form-field am-radius" placeholder="点击添加备注" /></p>
+                                <button type="button" class="am-btn am-btn-default am-radius add">保存</button>
+                            </div>
+                        </div>
+                        <div class="specialList">
+                            <div class="specialListNav flex">
+                                <span class="iconfont">&#xe600;</span>
+                                <button type="button" class="am-btn am-btn-primary" id="sort">按时间排序</button>
+                                <select data-am-selected>
+                                <option value="a" selected>餐饮费</option>
+                                <option value="b" >服饰美容</option>
+                                <option value="c"> 生活日用</option>
+                                <option value="d">住房缴费</option>
+                                <option value="e">交通出行</option>
+                                <option value="f">通讯物流</option>
+                                <option value="g">文教娱乐</option>
+                                <option value="h">健康</option>
+                                <option value="i">其他消费</option>
+                              </select>
+                                <select data-am-selected>
+                                <option value="a" selected>现金</option>
+                                <option value="b">银行卡</option>
+                                <option value="c">支付宝</option>
+                                <option value="d">信用卡</option>
+                                <option value="e">余额宝</option>
+                              </select>
+                                <div class="typeNote">
+                                    <p><input type="text" class="am-form-field am-radius" placeholder="搜索备注关键字" id="searchNote" /></p>
+                                    <button type="button" class="am-btn am-btn-primary" id="search">搜索</button>
+                                </div>
+                            </div>
+                            <div class="List">
+                                <div>
+                                    <ul class="am-nav am-nav-pills " id="listnav">
+                                        <li><a href="">序号</a></li>
+                                        <li><a href="">时间</a></li>
+                                        <li><a href="">消费类</a></li>
+                                        <li><a href="">金额</a></li>
+                                        <li><a href="">账户</a></li>
+                                        <li><a href="">备注</a></li>
+                                        <li><a href="">删除</a></li>
+                                    </ul>
+                                </div>
+                                <div class="list1">
+                                    <div class="am-panel-group" id="accordion"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chart" id="chart" style="   
+            height: 80vh;
+            position: absolute;
+            top: 242vh;
+            width: 60vw;
+            margin: 0 20vw;"></div>
+            <div class="personage" id="zxb" style="   
+            height: 80vh;
+            position: absolute;
+            top: 331vh;
+            width: 60vw;
+            margin: 0 20vw;"></div>
+            <div id="txt" style="   
+            height: 43vh;
+            position: absolute;
+            top: 410vh;
+            width: 60vw;
+            margin: 0 20vw;"></div>
+        </div>
+        <footer class="flex">
+            <div>
+                <img src="./images/二维码.png" alt="">
+            </div>
+            <div>
+                <ul>
+                    <li><i class="am-icon-qq am-icon-fw"></i>389746410</li>
+                    <li><i class="am-icon-github am-icon-fw"></i> GitHub</li>
+                    <li>copyright@HKFPouu</li>
+                </ul>
+            </div>
+            <div>
+                <img src="./images/二维码.png" alt="">
+            </div>
+        </footer>
+        <span class="iconfont" data-am-smooth-scroll id="top">&#xe62e;</span>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://gw.alipayobjects.com/os/lib/antv/g2/3.4.10/dist/g2.min.js"></script>
+    <script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.10.1/dist/data-set.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/antv.js"></script>
+    <script src="./AmazeUI-2.7.2/assets/js/amazeui.js"></script>
+</body>
+
+</html>

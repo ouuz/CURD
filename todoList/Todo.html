@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-todo fl">To do</div>
+            <div class="menu-calendar fr">日历</div>
+        </div>
+        <div>
+            <button id="new-todo" style="outline: none">+新建代办</button>
+            <ul id="labelList">
+                <li>
+                    <input type="checkbox" onclick="del_li(this)" class="checkbox">
+                    <span>写完一个todo</span>
+                    <button class="btn_save" onclick="modify(this)">修改</button>
+                    <button class="btn_del" onclick="del_li(this)">删除 </button>
+                </li>
+            </ul>
+        </div>
+        <div id="addlist">
+            <div class="addlist-menu">
+                <div class="addmenu-cancel fl">
+                    <input type="button" id="addmenu-cancel" value="取消">
+                </div>
+                <div class="addmenu-save fr">
+                    <input type="button" id="addmenu-save" value="保存">
+                </div>
+            </div>
+            <div class="addlist-table">
+                <input type="text" id="addlist-text" placeholder="添加代办内容">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
